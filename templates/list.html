@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Project List</title>
+	</head>
+	<body>
+		<h1>My Coding Projects🤓</h1>
+		<ul>
+			${project.map(p =>`
+			<li><a href="/projects/${p}">${p}</a></li>
+			`).join('')}
+		</ul>
+		<a href="/">Back Home</a>
+	</body>
+</html>
